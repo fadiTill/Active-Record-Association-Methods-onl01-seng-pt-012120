@@ -9,6 +9,7 @@ class Artist < ActiveRecord::Base
 
 
   def song_count
+    self.songs.size
     #return the number of songs associated with the artist
   end
 
