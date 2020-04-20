@@ -7,7 +7,7 @@ class Song < ActiveRecord::Base
   end
 
   def drake_made_this
-    if Artist.find_by(name:"Drake").empty?
+    if Artist.find_by(name:"Drake").nil?
       self.artist = Artist.create(name: "Drake")
     else
       self.artist = Artist.find_by(name: "Drake")
