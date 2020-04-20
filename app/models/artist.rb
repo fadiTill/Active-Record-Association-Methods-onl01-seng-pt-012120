@@ -6,7 +6,7 @@ class Artist < ActiveRecord::Base
     self.songs.first.genre
   end
     #return the genre of the artist's first saved song
-  end
+  
 
   def song_count
     #return the number of songs associated with the artist
